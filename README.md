@@ -35,5 +35,5 @@ Using `diamond_square` will simply print ![2^n + 1](imgs/2_pow_n_plus_1.png) x !
 ## Work to complete
 
 - [x] Implement general algorithm.
-- [ ] Add funcitonality to convert the terrain to `.stl` object.
+- [x] Add funcitonality to convert the terrain to `.stl` object.
 - [ ] Make a demo using Unity game engine.

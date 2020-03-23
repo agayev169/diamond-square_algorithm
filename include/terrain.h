@@ -12,6 +12,10 @@ class Terrain {
         unsigned int height_;
 
     public:
+        const static uint8_t STL_ASCII = 0;
+        const static uint8_t STL_BIN   = 1;
+        const static unsigned int STL_HEADER_SIZE = 80;
+
         Terrain(unsigned int width, unsigned int height);
         Terrain(const Terrain &other);
         ~Terrain();
@@ -28,6 +32,8 @@ class Terrain {
 
         unsigned int width() const;
         unsigned int height() const;
+
+        void to_stl(const std::string &filename, uint8_t stl_type) const;
 };
 
 std::ostream &operator<<(std::ostream &os, const Terrain &terrain);
