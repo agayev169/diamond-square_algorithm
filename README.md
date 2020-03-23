@@ -35,21 +35,15 @@ Using `diamond_square` will execute the diamond-square algorithm with given para
 
 ## Results
 
-<div>
-   <div style="display: inline-block">
-      <figure>
-        <img src="imgs/output/7_30_0_10_20_50.png" alt="Trulli">
-        <figcaption>Output of <kbd>./diamond_square 7 30 0 10 20 50</kbd> command.</figcaption>
-      </figure>
-   </div>
+<figure>
+  <img src="imgs/output/7_30_0_10_20_50.png" alt="output of ./diamond_square 7 30 0 10 20 50 command">
+  <figcaption>Output of <kbd>./diamond_square 7 30 0 10 20 50</kbd> command.</figcaption>
+</figure>
 
-   <div style="display: inline-block">
-      <figure>
-        <img src="imgs/output/8_30_0_10_20_70.png" alt="Trulli">
-        <figcaption>Output of <kbd>./diamond_square 8 30 0 10 20 70</kbd> command.</figcaption>
-      </figure>
-   </div>
-</div>
+<figure>
+  <img src="imgs/output/8_30_0_10_20_70.png" alt="output of ./diamond_square 8 30 0 10 20 70 command">
+  <figcaption>Output of <kbd>./diamond_square 8 30 0 10 20 70</kbd> command.</figcaption>
+</figure>
 
 ## Work to complete
 
