@@ -15,9 +15,9 @@ Terrain diamond_square::diamond_square(unsigned int n, double tl, double tr, dou
     terrain[Vector2(0             , vertices_n - 1)] = bl;
 
     for (unsigned int i = 0, step_size = vertices_n - 1; i < n; ++i, step_size /= 2, random_scale /= 2) {
+        // Diamond
         for (unsigned int j = 0; j < (vertices_n - 1) / step_size; ++j) {
             for (unsigned int k = 0; k < (vertices_n - 1) / step_size; ++k) {
-                // Diamond
                 Vector2 tl( k      * step_size,  j      * step_size);
                 Vector2 tr((k + 1) * step_size,  j      * step_size);
                 Vector2 bl( k      * step_size, (j + 1) * step_size);
@@ -26,9 +26,19 @@ Terrain diamond_square::diamond_square(unsigned int n, double tl, double tr, dou
                 Vector2 middle = (tl + tr + bl + br) / 4;
 
                 terrain[middle] = (terrain[tl] + terrain[tr] + terrain[bl] + terrain[br]) / 4 + random_scale * (rand() % 20000 / 10000.0 - 1);
+            }
+        }
 
-                // Square
-                // TODO: Correct this!
+        // Square
+        for (unsigned int j = 0; j < (vertices_n - 1) / step_size; ++j) {
+            for (unsigned int k = 0; k < (vertices_n - 1) / step_size; ++k) {
+                Vector2 tl( k      * step_size,  j      * step_size);
+                Vector2 tr((k + 1) * step_size,  j      * step_size);
+                Vector2 bl( k      * step_size, (j + 1) * step_size);
+                Vector2 br((k + 1) * step_size, (j + 1) * step_size);
+
+                Vector2 middle = (tl + tr + bl + br) / 4;
+
                 Vector2 t = tl + Vector2(step_size / 2, 0            );
                 Vector2 r = tr + Vector2(0            , step_size / 2);
                 Vector2 b = br - Vector2(step_size / 2, 0            );
