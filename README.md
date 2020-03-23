@@ -28,9 +28,28 @@ The visual representation of the algorithm (from [wikipedia](https://en.wikipedi
 3. **tr**: height value for the top right corner
 4. **br**: height value for the bottom right corner
 5. **bl**: height value for the bottom left corner
-6. **rs**: *(optional)* scale for the random value that will be added during diamond and square operations
+6. **rs**: *(optional, defaul value: 1)* scale for the random value that will be added during diamond and square operations
+7. **filename**: *(optional, defaul value: "obj.stl")* name of the output `.stl` file
 
-Using `diamond_square` will simply print ![2^n + 1](imgs/2_pow_n_plus_1.png) x ![2^n + 1](imgs/2_pow_n_plus_1.png) matrix of heights. 
+Using `diamond_square` will execute the diamond-square algorithm with given parameters and save a `.stl` file with `filename` name.
+
+## Results
+
+<div>
+   <div style="display: inline-block">
+      <figure>
+        <img src="imgs/output/7_30_0_10_20_50.png" alt="Trulli">
+        <figcaption>Output of <kbd>./diamond_square 7 30 0 10 20 50</kbd> command.</figcaption>
+      </figure>
+   </div>
+
+   <div style="display: inline-block">
+      <figure>
+        <img src="imgs/output/8_30_0_10_20_70.png" alt="Trulli">
+        <figcaption>Output of <kbd>./diamond_square 8 30 0 10 20 70</kbd> command.</figcaption>
+      </figure>
+   </div>
+</div>
 
 ## Work to complete
 
