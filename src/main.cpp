@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 
     Terrain terrain = diamond_square::diamond_square(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), rs);
 
-    std::cout << terrain << std::endl; 
+    terrain.to_stl("obj.stl", Terrain::STL_BIN);
 
     return 0;
 }
